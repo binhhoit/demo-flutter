@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app3/AnimationScreen.dart';
 import 'package:flutter_app3/ExampleScreen.dart';
 import 'package:flutter_app3/ScreenFive.dart';
 import 'package:flutter_app3/ScreenFour.dart';
@@ -155,6 +156,15 @@ class _MyHomePageState extends State<MyHomePage> {
                               context,
                               new MaterialPageRoute(
                                   builder: (context) => new ExampleScreen()));
+                        }),
+                    new RaisedButton(
+                        color: Colors.deepOrange,
+                        child: new Text("Example Animation"),
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              new MaterialPageRoute(
+                                  builder: (context) => new AnimationScreen()));
                         }),
                   ],
                 ),
